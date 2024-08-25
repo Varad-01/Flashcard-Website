@@ -1,8 +1,18 @@
-# React + Vite
+# Flashcard website
+#Description
+The Flashcard Website is a web application designed to help users create, view, edit, and manage flashcards. Users can generate flashcards using AI, view them in a card format, and navigate through them. The application includes functionalities for searching and updating existing flashcards, as well as generating new ones through an AI-powered API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Key Features
+•Generate Flashcards: Create flashcards using AI.
+•View Flashcards: Display flashcards in a flip-card format.
+•Edit Flashcards: Update existing flashcards with new questions or answers.
+•Delete Flashcards: Remove flashcards from the database.
+•Search Flashcards: Find flashcards by searching for specific questions.
 
-Currently, two official plugins are available:
+#Installation commands
+#Frontend commands:
+npm install react react-dom axios @google/generative-ai
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Backend commands:
+npm install express cors dotenv @prisma/client
+npm install prisma --save-dev
