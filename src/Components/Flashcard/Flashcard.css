@@ -1,0 +1,73 @@
+.flashcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.flashcard {
+  width: 30vw;
+  height: 10vw;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.question,
+.answer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border: 1px solid #0e6b4c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5vw;
+  padding: 1vw;
+}
+
+.answer {
+  transform: rotateY(180deg);
+}
+
+.content {
+  font-size: 1.8vw;
+  color: rgb(15, 1, 1);
+}
+
+.next-button {
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  background-color: rgb(52, 160, 124);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.previous-button {
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+  background-color: rgb(52, 160, 124);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1.2em;
+}
